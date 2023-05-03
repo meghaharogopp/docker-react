@@ -2,7 +2,7 @@ sudo: required
 services:
   - docker
 before-install:
-  - docker build -t meghaharogopp/docker-react -f Dockerfile.dev .
+  - docker build -t meghaharogopp/docker-react  .
 script:
   - docker run -e CI=true meghaharogopp/docker-react npm run test
 
